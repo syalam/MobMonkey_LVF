@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		129D8BC1FB7745148217DDE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D2AC0186DD4EC983120126 /* libPods.a */; };
 		B9FC4FD8171DDCE100FF9B17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FC4FD7171DDCE100FF9B17 /* UIKit.framework */; };
 		B9FC4FDA171DDCE100FF9B17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FC4FD9171DDCE100FF9B17 /* Foundation.framework */; };
 		B9FC4FDC171DDCE100FF9B17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FC4FDB171DDCE100FF9B17 /* CoreGraphics.framework */; };
@@ -23,6 +24,11 @@
 		B9FC4FFE171DDCE100FF9B17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FC4FD9171DDCE100FF9B17 /* Foundation.framework */; };
 		B9FC5006171DDCE100FF9B17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9FC5004171DDCE100FF9B17 /* InfoPlist.strings */; };
 		B9FC5009171DDCE100FF9B17 /* MobMonkey_LVFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FC5008171DDCE100FF9B17 /* MobMonkey_LVFTests.m */; };
+		B9FC5016171DDD4A00FF9B17 /* MMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FC5014171DDD4A00FF9B17 /* MMLoginViewController.m */; };
+		B9FC5017171DDD4A00FF9B17 /* MMLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9FC5015171DDD4A00FF9B17 /* MMLoginViewController.xib */; };
+		B9FC501D171E04B900FF9B17 /* MMSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FC501B171E04B900FF9B17 /* MMSignUpViewController.m */; };
+		B9FC501E171E04B900FF9B17 /* MMSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9FC501C171E04B900FF9B17 /* MMSignUpViewController.xib */; };
+		B9FC5022171E055800FF9B17 /* MMTextInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FC5021171E055800FF9B17 /* MMTextInputCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B75BFA83FC94FF8B8C2623C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		B9FC4FD4171DDCE100FF9B17 /* MobMonkey_LVF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobMonkey_LVF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FC4FD7171DDCE100FF9B17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B9FC4FD9171DDCE100FF9B17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +65,15 @@
 		B9FC5005171DDCE100FF9B17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B9FC5007171DDCE100FF9B17 /* MobMonkey_LVFTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobMonkey_LVFTests.h; sourceTree = "<group>"; };
 		B9FC5008171DDCE100FF9B17 /* MobMonkey_LVFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobMonkey_LVFTests.m; sourceTree = "<group>"; };
+		B9FC5013171DDD4A00FF9B17 /* MMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMLoginViewController.h; sourceTree = "<group>"; };
+		B9FC5014171DDD4A00FF9B17 /* MMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMLoginViewController.m; sourceTree = "<group>"; };
+		B9FC5015171DDD4A00FF9B17 /* MMLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMLoginViewController.xib; sourceTree = "<group>"; };
+		B9FC501A171E04B900FF9B17 /* MMSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSignUpViewController.h; sourceTree = "<group>"; };
+		B9FC501B171E04B900FF9B17 /* MMSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSignUpViewController.m; sourceTree = "<group>"; };
+		B9FC501C171E04B900FF9B17 /* MMSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMSignUpViewController.xib; sourceTree = "<group>"; };
+		B9FC5020171E055800FF9B17 /* MMTextInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTextInputCell.h; sourceTree = "<group>"; };
+		B9FC5021171E055800FF9B17 /* MMTextInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTextInputCell.m; sourceTree = "<group>"; };
+		E1D2AC0186DD4EC983120126 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +84,7 @@
 				B9FC4FD8171DDCE100FF9B17 /* UIKit.framework in Frameworks */,
 				B9FC4FDA171DDCE100FF9B17 /* Foundation.framework in Frameworks */,
 				B9FC4FDC171DDCE100FF9B17 /* CoreGraphics.framework in Frameworks */,
+				129D8BC1FB7745148217DDE2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +108,7 @@
 				B9FC5001171DDCE100FF9B17 /* MobMonkey_LVFTests */,
 				B9FC4FD6171DDCE100FF9B17 /* Frameworks */,
 				B9FC4FD5171DDCE100FF9B17 /* Products */,
+				2B75BFA83FC94FF8B8C2623C /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +128,7 @@
 				B9FC4FD9171DDCE100FF9B17 /* Foundation.framework */,
 				B9FC4FDB171DDCE100FF9B17 /* CoreGraphics.framework */,
 				B9FC4FFB171DDCE100FF9B17 /* SenTestingKit.framework */,
+				E1D2AC0186DD4EC983120126 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +136,9 @@
 		B9FC4FDD171DDCE100FF9B17 /* MobMonkey_LVF */ = {
 			isa = PBXGroup;
 			children = (
+				B9FC5023171E065200FF9B17 /* Models */,
+				B9FC501F171E052500FF9B17 /* UITableViewCells */,
+				B9FC5012171DDD2500FF9B17 /* Authentication */,
 				B9FC4FE6171DDCE100FF9B17 /* MMAppDelegate.h */,
 				B9FC4FE7171DDCE100FF9B17 /* MMAppDelegate.m */,
 				B9FC4FEF171DDCE100FF9B17 /* MMViewController.h */,
@@ -160,6 +182,51 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B9FC5012171DDD2500FF9B17 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B9FC5019171E049600FF9B17 /* SignUp */,
+				B9FC5018171E00FB00FF9B17 /* Login */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		B9FC5018171E00FB00FF9B17 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B9FC5013171DDD4A00FF9B17 /* MMLoginViewController.h */,
+				B9FC5014171DDD4A00FF9B17 /* MMLoginViewController.m */,
+				B9FC5015171DDD4A00FF9B17 /* MMLoginViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		B9FC5019171E049600FF9B17 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				B9FC501A171E04B900FF9B17 /* MMSignUpViewController.h */,
+				B9FC501B171E04B900FF9B17 /* MMSignUpViewController.m */,
+				B9FC501C171E04B900FF9B17 /* MMSignUpViewController.xib */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		B9FC501F171E052500FF9B17 /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B9FC5020171E055800FF9B17 /* MMTextInputCell.h */,
+				B9FC5021171E055800FF9B17 /* MMTextInputCell.m */,
+			);
+			name = UITableViewCells;
+			sourceTree = "<group>";
+		};
+		B9FC5023171E065200FF9B17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9FC500C171DDCE100FF9B17 /* Build configuration list for PBXNativeTarget "MobMonkey_LVF" */;
 			buildPhases = (
+				3AD0798F5307422FB884CF43 /* Check Pods Manifest.lock */,
 				B9FC4FD0171DDCE100FF9B17 /* Sources */,
 				B9FC4FD1171DDCE100FF9B17 /* Frameworks */,
 				B9FC4FD2171DDCE100FF9B17 /* Resources */,
+				E8822D737F534516BCDE7DD8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +306,8 @@
 				B9FC4FEC171DDCE100FF9B17 /* Default@2x.png in Resources */,
 				B9FC4FEE171DDCE100FF9B17 /* Default-568h@2x.png in Resources */,
 				B9FC4FF4171DDCE100FF9B17 /* MMViewController.xib in Resources */,
+				B9FC5017171DDD4A00FF9B17 /* MMLoginViewController.xib in Resources */,
+				B9FC501E171E04B900FF9B17 /* MMSignUpViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +322,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3AD0798F5307422FB884CF43 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
 		B9FC4FF8171DDCE100FF9B17 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,6 +349,20 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		E8822D737F534516BCDE7DD8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -274,6 +373,9 @@
 				B9FC4FE4171DDCE100FF9B17 /* main.m in Sources */,
 				B9FC4FE8171DDCE100FF9B17 /* MMAppDelegate.m in Sources */,
 				B9FC4FF1171DDCE100FF9B17 /* MMViewController.m in Sources */,
+				B9FC5016171DDD4A00FF9B17 /* MMLoginViewController.m in Sources */,
+				B9FC501D171E04B900FF9B17 /* MMSignUpViewController.m in Sources */,
+				B9FC5022171E055800FF9B17 /* MMTextInputCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +483,7 @@
 		};
 		B9FC500D171DDCE100FF9B17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B75BFA83FC94FF8B8C2623C /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MobMonkey_LVF/MobMonkey_LVF-Prefix.pch";
@@ -392,6 +495,7 @@
 		};
 		B9FC500E171DDCE100FF9B17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B75BFA83FC94FF8B8C2623C /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MobMonkey_LVF/MobMonkey_LVF-Prefix.pch";
@@ -454,6 +558,7 @@
 				B9FC500E171DDCE100FF9B17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9FC500F171DDCE100FF9B17 /* Build configuration list for PBXNativeTarget "MobMonkey_LVFTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +567,7 @@
 				B9FC5011171DDCE100FF9B17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

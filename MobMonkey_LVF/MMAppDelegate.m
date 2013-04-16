@@ -9,6 +9,7 @@
 #import "MMAppDelegate.h"
 
 #import "MMViewController.h"
+#import "MMLoginViewController.h"
 
 @implementation MMAppDelegate
 
@@ -16,9 +17,19 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
     self.viewController = [[MMViewController alloc] initWithNibName:@"MMViewController" bundle:nil];
+    
     self.window.rootViewController = self.viewController;
+    
+    MMLoginViewController *loginViewController = [[MMLoginViewController alloc] initWithNibName:@"MMLoginViewController" bundle:nil];
+    
+    UINavigationController *loginNavigationViewController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+    
     [self.window makeKeyAndVisible];
+    
+    [self.viewController presentViewController:loginNavigationViewController animated:YES completion:nil];
+    
     return YES;
 }
 
