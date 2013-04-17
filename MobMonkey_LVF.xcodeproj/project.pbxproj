@@ -29,6 +29,14 @@
 		B9FC501D171E04B900FF9B17 /* MMSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FC501B171E04B900FF9B17 /* MMSignUpViewController.m */; };
 		B9FC501E171E04B900FF9B17 /* MMSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9FC501C171E04B900FF9B17 /* MMSignUpViewController.xib */; };
 		B9FC5022171E055800FF9B17 /* MMTextInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FC5021171E055800FF9B17 /* MMTextInputCell.m */; };
+		B9FC502B171E168200FF9B17 /* MMAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FC502A171E168200FF9B17 /* MMAuthentication.m */; };
+		B9FC5030171E1AF800FF9B17 /* MMEditDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FC502E171E1AF800FF9B17 /* MMEditDetailsViewController.m */; };
+		B9FC5031171E1AF800FF9B17 /* MMEditDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9FC502F171E1AF800FF9B17 /* MMEditDetailsViewController.xib */; };
+		B9FC5034171E1C1100FF9B17 /* MMSocialNetworkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FC5033171E1C1000FF9B17 /* MMSocialNetworkButton.m */; };
+		B9FC5039171E255D00FF9B17 /* facebook-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FC5037171E255D00FF9B17 /* facebook-icon.png */; };
+		B9FC503A171E255D00FF9B17 /* facebook-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FC5038171E255D00FF9B17 /* facebook-icon@2x.png */; };
+		B9FC503D171E265000FF9B17 /* twitter-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FC503B171E265000FF9B17 /* twitter-icon.png */; };
+		B9FC503E171E265000FF9B17 /* twitter-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FC503C171E265000FF9B17 /* twitter-icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +81,17 @@
 		B9FC501C171E04B900FF9B17 /* MMSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMSignUpViewController.xib; sourceTree = "<group>"; };
 		B9FC5020171E055800FF9B17 /* MMTextInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTextInputCell.h; sourceTree = "<group>"; };
 		B9FC5021171E055800FF9B17 /* MMTextInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTextInputCell.m; sourceTree = "<group>"; };
+		B9FC5029171E168200FF9B17 /* MMAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMAuthentication.h; sourceTree = "<group>"; };
+		B9FC502A171E168200FF9B17 /* MMAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMAuthentication.m; sourceTree = "<group>"; };
+		B9FC502D171E1AF800FF9B17 /* MMEditDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMEditDetailsViewController.h; sourceTree = "<group>"; };
+		B9FC502E171E1AF800FF9B17 /* MMEditDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMEditDetailsViewController.m; sourceTree = "<group>"; };
+		B9FC502F171E1AF800FF9B17 /* MMEditDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMEditDetailsViewController.xib; sourceTree = "<group>"; };
+		B9FC5032171E1C1000FF9B17 /* MMSocialNetworkButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSocialNetworkButton.h; sourceTree = "<group>"; };
+		B9FC5033171E1C1000FF9B17 /* MMSocialNetworkButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSocialNetworkButton.m; sourceTree = "<group>"; };
+		B9FC5037171E255D00FF9B17 /* facebook-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-icon.png"; sourceTree = "<group>"; };
+		B9FC5038171E255D00FF9B17 /* facebook-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-icon@2x.png"; sourceTree = "<group>"; };
+		B9FC503B171E265000FF9B17 /* twitter-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-icon.png"; sourceTree = "<group>"; };
+		B9FC503C171E265000FF9B17 /* twitter-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-icon@2x.png"; sourceTree = "<group>"; };
 		E1D2AC0186DD4EC983120126 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,6 +155,7 @@
 		B9FC4FDD171DDCE100FF9B17 /* MobMonkey_LVF */ = {
 			isa = PBXGroup;
 			children = (
+				B9FC5035171E251500FF9B17 /* Assets */,
 				B9FC5023171E065200FF9B17 /* Models */,
 				B9FC501F171E052500FF9B17 /* UITableViewCells */,
 				B9FC5012171DDD2500FF9B17 /* Authentication */,
@@ -145,6 +165,8 @@
 				B9FC4FF0171DDCE100FF9B17 /* MMViewController.m */,
 				B9FC4FF2171DDCE100FF9B17 /* MMViewController.xib */,
 				B9FC4FDE171DDCE100FF9B17 /* Supporting Files */,
+				B9FC5032171E1C1000FF9B17 /* MMSocialNetworkButton.h */,
+				B9FC5033171E1C1000FF9B17 /* MMSocialNetworkButton.m */,
 			);
 			path = MobMonkey_LVF;
 			sourceTree = "<group>";
@@ -185,6 +207,7 @@
 		B9FC5012171DDD2500FF9B17 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				B9FC502C171E1AD900FF9B17 /* Confirm Details */,
 				B9FC5019171E049600FF9B17 /* SignUp */,
 				B9FC5018171E00FB00FF9B17 /* Login */,
 			);
@@ -223,8 +246,39 @@
 		B9FC5023171E065200FF9B17 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B9FC5029171E168200FF9B17 /* MMAuthentication.h */,
+				B9FC502A171E168200FF9B17 /* MMAuthentication.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		B9FC502C171E1AD900FF9B17 /* Confirm Details */ = {
+			isa = PBXGroup;
+			children = (
+				B9FC502D171E1AF800FF9B17 /* MMEditDetailsViewController.h */,
+				B9FC502E171E1AF800FF9B17 /* MMEditDetailsViewController.m */,
+				B9FC502F171E1AF800FF9B17 /* MMEditDetailsViewController.xib */,
+			);
+			name = "Confirm Details";
+			sourceTree = "<group>";
+		};
+		B9FC5035171E251500FF9B17 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B9FC5036171E251B00FF9B17 /* Login */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		B9FC5036171E251B00FF9B17 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B9FC503B171E265000FF9B17 /* twitter-icon.png */,
+				B9FC503C171E265000FF9B17 /* twitter-icon@2x.png */,
+				B9FC5037171E255D00FF9B17 /* facebook-icon.png */,
+				B9FC5038171E255D00FF9B17 /* facebook-icon@2x.png */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +362,11 @@
 				B9FC4FF4171DDCE100FF9B17 /* MMViewController.xib in Resources */,
 				B9FC5017171DDD4A00FF9B17 /* MMLoginViewController.xib in Resources */,
 				B9FC501E171E04B900FF9B17 /* MMSignUpViewController.xib in Resources */,
+				B9FC5031171E1AF800FF9B17 /* MMEditDetailsViewController.xib in Resources */,
+				B9FC5039171E255D00FF9B17 /* facebook-icon.png in Resources */,
+				B9FC503A171E255D00FF9B17 /* facebook-icon@2x.png in Resources */,
+				B9FC503D171E265000FF9B17 /* twitter-icon.png in Resources */,
+				B9FC503E171E265000FF9B17 /* twitter-icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +435,9 @@
 				B9FC5016171DDD4A00FF9B17 /* MMLoginViewController.m in Sources */,
 				B9FC501D171E04B900FF9B17 /* MMSignUpViewController.m in Sources */,
 				B9FC5022171E055800FF9B17 /* MMTextInputCell.m in Sources */,
+				B9FC502B171E168200FF9B17 /* MMAuthentication.m in Sources */,
+				B9FC5030171E1AF800FF9B17 /* MMEditDetailsViewController.m in Sources */,
+				B9FC5034171E1C1100FF9B17 /* MMSocialNetworkButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

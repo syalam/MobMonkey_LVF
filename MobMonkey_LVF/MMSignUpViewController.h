@@ -16,6 +16,9 @@
     IBOutlet UITableView *credentialsTableView;
 }
 
+-(IBAction)facebookSignUpButtonPressed:(id)sender;
+-(IBAction)twitterSignUpButtonPressed:(id)sender;
+-(IBAction)signUpButtonPressed:(id)sender;
 
 
 @end

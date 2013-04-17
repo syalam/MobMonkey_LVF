@@ -8,12 +8,25 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MobMonkey_LVF/MMSignUpViewController.m"
-         timestampString = "387847043.073624"
+         timestampString = "387850880.513687"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "71"
-         endingLineNumber = "71"
+         startingLineNumber = "122"
+         endingLineNumber = "122"
          landmarkName = "-tableView:didSelectRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "MobMonkey_LVF/MMSocialNetworkButton.m"
+         timestampString = "387852340.869363"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "49"
+         endingLineNumber = "49"
+         landmarkName = "-setSocialNetworkType:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

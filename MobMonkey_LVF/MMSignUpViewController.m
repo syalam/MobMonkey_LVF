@@ -8,8 +8,14 @@
 
 #import "MMSignUpViewController.h"
 
+//Controllers
+#import "MMEditDetailsViewController.h"
+
+//Views
 #import "MMTextInputCell.h"
 
+//Models
+#import "MMAuthentication.h"
 
 @interface MMSignUpViewController ()
 
@@ -37,6 +43,51 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)pushEditSettingsViewController {
+    MMEditDetailsViewController *editDetailsViewController = [[MMEditDetailsViewController alloc] initWithNibName:@"MMEditDetailsViewController" bundle:nil];
+    [self.navigationController pushViewController:editDetailsViewController animated:YES];
+}
+#pragma mark - IBAction Methods
+
+-(IBAction)facebookSignUpButtonPressed:(id)sender {
+    
+    [[MMAuthentication sharedAuth] authenticateFacebookWithSuccessBlock:^(NSDictionary *userInfo) {
+        
+        [self pushEditSettingsViewController];
+        
+    } andFailure:^(NSError *error) {
+        
+        NSLog(@"Facebook Authentication Failed: %@", error);
+        
+    }];
+    
+}
+-(IBAction)twitterSignUpButtonPressed:(id)sender {
+    
+    [[MMAuthentication sharedAuth] authenticateTwitterWithSuccessBlock:^(NSDictionary *userInfo) {
+        
+        [self pushEditSettingsViewController];
+        
+    } andFailure:^(NSError *error) {
+        
+        NSLog(@"Twitter Authentication Failed: %@", error);
+        
+    }];
+    
+}
+-(IBAction)signUpButtonPressed:(id)sender {
+    
+    [[MMAuthentication sharedAuth] authenticateMobMonkeyWithSuccessBlock:^(NSDictionary *userInfo) {
+        
+        [self pushEditSettingsViewController];
+        
+    } andFailure:^(NSError *error) {
+        NSLog(@"MobMonkey Authentication Failed: %@", error);
+    }];
+}
+
+
 #pragma mark - UITableView Data Source
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString * CellIdentifier = @"MMTextInputCell";

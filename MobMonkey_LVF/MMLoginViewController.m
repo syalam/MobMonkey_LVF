@@ -8,9 +8,12 @@
 
 #import "MMLoginViewController.h"
 
+//Views
 #import "MMTextInputCell.h"
-
 #import "MMSignUpViewController.h"
+
+//Models
+#import "MMAuthentication.h"
 
 @interface MMLoginViewController ()
 
@@ -49,11 +52,42 @@
 }
 -(IBAction)facebookSignInButtonPressed:(id)sender {
     
+    [[MMAuthentication sharedAuth] authenticateFacebookWithSuccessBlock:^(NSDictionary *userInfo) {
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
+        
+    } andFailure:^(NSError *error) {
+        
+        NSLog(@"Facebook Authentication Failed: %@", error);
+        
+    }];
+    
 }
 -(IBAction)twitterSignInButtonPressed:(id)sender {
     
+    [[MMAuthentication sharedAuth] authenticateTwitterWithSuccessBlock:^(NSDictionary *userInfo) {
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
+        
+    } andFailure:^(NSError *error) {
+        
+        NSLog(@"Twitter Authentication Failed: %@", error);
+        
+    }];
+
+    
 }
 -(IBAction)signInButtonPressed:(id)sender {
+    
+    [[MMAuthentication sharedAuth] authenticateMobMonkeyWithSuccessBlock:^(NSDictionary *userInfo) {
+        
+        [self dismissViewControllerAnimated:YES completion:nil];
+        
+    } andFailure:^(NSError *error) {
+        
+        NSLog(@"MobMonkey Authentication Failed: %@", error);
+        
+    }];
     
 }
  
