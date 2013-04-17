@@ -1,10 +1,16 @@
 PODS:
+  - AFNetworking (1.2.0)
   - TPKeyboardAvoiding (0.0.1)
+  - UIAlertView-Blocks (0.0.1)
 
 DEPENDENCIES:
+  - AFNetworking (~> 1.2.0)
   - TPKeyboardAvoiding (~> 0.0.1)
+  - UIAlertView-Blocks (~> 0.0.1)
 
 SPEC CHECKSUMS:
+  AFNetworking: 3cbae45f61a9f995cdbd56bd571223910d7f4e44
   TPKeyboardAvoiding: 7289409b17dc2193a3f324672283c542f17c1bb1
+  UIAlertView-Blocks: 7689ad7dd941417e7a7da81507482bc6f4f15bcd
 
 COCOAPODS: 0.18.1

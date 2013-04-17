@@ -20,16 +20,17 @@
         
         CGRect textViewFrame = self.bounds;
         
-        CGFloat padding = 50.0f;
+        CGFloat padding = 5.0f;
         CGFloat textViewHeight = 20.0f;
         
         textViewFrame.origin.x += padding;
-        textViewFrame.size.width -= padding * 2;
+        textViewFrame.size.width -= padding * 2 + 75;
         textViewFrame.size.height = textViewHeight;
         textViewFrame.origin.y += (self.bounds.size.height - textViewHeight)/2;
         
         textField = [[UITextField alloc] initWithFrame:textViewFrame];
         textField.font = [UIFont fontWithName:@"Helvetica" size:16.0f];
+        [textField setClearButtonMode:UITextFieldViewModeWhileEditing];
 
         [self.contentView addSubview:textField];
     }

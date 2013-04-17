@@ -9,11 +9,18 @@
 #import <UIKit/UIKit.h>
 
 #import "MMSocialNetworkButton.h"
+#import "MMProflePhotoButton.h"
 
-@interface MMEditDetailsViewController : UIViewController {
+@interface MMEditDetailsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     
     IBOutlet MMSocialNetworkButton *facebookButton;
     IBOutlet MMSocialNetworkButton *twitterButton;
+    IBOutlet UITableView *userDetailTableView;
+    IBOutlet MMProflePhotoButton *profileButton;
+    IBOutlet UIButton *doneButton;
+    IBOutlet UIScrollView *scrollView;
+    
+    NSArray *userDetails;
     
 }
 
