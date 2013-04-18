@@ -8,12 +8,27 @@
 
 #import <UIKit/UIKit.h>
 
-@class MMViewController;
+#import "MMSlideMenuViewController.h"
+
+
+#define app_delegate ((MMAppDelegate *)[[UIApplication sharedApplication] delegate])
+
+@class MMSlideMenuViewController;
+@class MMNavigationViewController;
 
 @interface MMAppDelegate : UIResponder <UIApplicationDelegate>
 
+
+
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) MMViewController *viewController;
+@property (nonatomic, strong) MMNavigationViewController *currentViewController;
+@property (nonatomic, strong) MMSlideMenuViewController *slideMenuViewController;
+
+-(void)showSlideMenu;
+-(void)dismissSlideMenu;
+-(void)startPanning;
+-(void)endPanning;
+-(void)changePanning:(CGPoint)location;
 
 @end
