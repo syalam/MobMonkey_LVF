@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIImage+ImageWithUIView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIImage(ImageWithUIView)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIImage+ImageWithUIView.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIImage(ImageWithUIView)/imageWithUIView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>UIImage+ImageWithUIView.h</DeclaredIn>			
+			
+			<Declaration>+ (UIImage *)imageWithUIView:(UIView *)view</Declaration>
+			
+			
+			<Anchor>//api/name/imageWithUIView:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -2,5 +2,7 @@
 #define __COCOA_PODS
 
 #define __POD_AFNetworking
+#define __POD_CustomBadge
+#define __POD_ECSlidingViewController
 #define __POD_TPKeyboardAvoiding
 #define __POD_UIAlertView_Blocks

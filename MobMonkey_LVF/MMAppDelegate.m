@@ -10,41 +10,37 @@
 
 #import "MMViewController.h"
 #import "MMLoginViewController.h"
+#import "MMSlideNavigationController.h"
 #import "MMNavigationViewController.h"
 
 
 #import <QuartzCore/QuartzCore.h>
 
-#define app_delegate ((MMAppDelegate *)[[UIApplication sharedApplication] delegate])
+//#define app_delegate ((MMAppDelegate *)[[UIApplication sharedApplication] delegate])
 
 @implementation MMAppDelegate
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
+    
+    MMSlideNavigationController *slideNavigationController = [[MMSlideNavigationController alloc] init];
     
     MMViewController *viewController = [[MMViewController alloc] initWithNibName:@"MMViewController" bundle:nil];
     
     MMNavigationViewController *navigationViewController = [[MMNavigationViewController alloc] initWithRootViewController:viewController];
     
-
-    self.currentViewController = navigationViewController;
+    slideNavigationController.topViewController = navigationViewController;
     
-    MMSlideMenuViewController *slideMenuViewController = [[MMSlideMenuViewController alloc] initWithNibName:@"MMSlideMenuViewController" bundle:nil];
-    self.slideMenuViewController = slideMenuViewController;
-    
-    
-    self.window.rootViewController = self.currentViewController;
-    
-    MMLoginViewController *loginViewController = [[MMLoginViewController alloc] initWithNibName:@"MMLoginViewController" bundle:nil];
-    
-    UINavigationController *loginNavigationViewController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
-    loginNavigationViewController.navigationBar.tintColor = [UIColor colorWithRed:1.000 green:0.558 blue:0.286 alpha:1.000];
-    
+    self.window.rootViewController = slideNavigationController;
     [self.window makeKeyAndVisible];
     
-    [self.currentViewController presentViewController:loginNavigationViewController animated:YES completion:nil];
+
     
     return YES;
 }
@@ -75,50 +71,6 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
-
-
-
--(UIImage*)screenshotForViewController:(UIViewController *)viewController{
-    // before swaping the views, we'll take a "screenshot" of the current view
-    // by rendering its CALayer into the an ImageContext then saving that off to a UIImage
-    CGSize viewSize = viewController.view.frame.size;
-    UIGraphicsBeginImageContextWithOptions(viewSize, NO, 1.0);
-    [viewController.view.layer renderInContext:UIGraphicsGetCurrentContext()];
-    
-    // Read the UIImage object
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return image;
-}
-
--(void)startPanning{
-    
-}
--(void)changePanning:(CGPoint)location {
-    
-}
--(void)endPanning {
-    
-}
-
--(void)showSlideMenu
-{
-    
-    UIImage *image = [self screenshotForViewController:self.currentViewController];
-    
-    // pass this image off to the MenuViewController then swap it in as the rootViewController
-    self.slideMenuViewController.screenshotImage = image;
-    self.window.rootViewController = self.slideMenuViewController;
-}
-
--(void)dismissSlideMenu
-{
-    // all animation takes place elsewhere. When this gets called just swap the contentViewController in
-    self.window.rootViewController = self.currentViewController;
-}
-
 
 
 

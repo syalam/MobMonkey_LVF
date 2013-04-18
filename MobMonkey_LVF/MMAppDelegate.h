@@ -11,12 +11,12 @@
 #import "MMSlideMenuViewController.h"
 
 
-#define app_delegate ((MMAppDelegate *)[[UIApplication sharedApplication] delegate])
+//#define app_delegate ((MMAppDelegate *)[[UIApplication sharedApplication] delegate])
 
 @class MMSlideMenuViewController;
 @class MMNavigationViewController;
 
-@interface MMAppDelegate : UIResponder <UIApplicationDelegate>
+@interface MMAppDelegate : UIResponder <UIApplicationDelegate, UIGestureRecognizerDelegate>
 
 
 
@@ -25,10 +25,16 @@
 @property (nonatomic, strong) MMNavigationViewController *currentViewController;
 @property (nonatomic, strong) MMSlideMenuViewController *slideMenuViewController;
 
+@property (nonatomic, strong) UIPanGestureRecognizer *panRecognizer;
+@property (nonatomic, assign) BOOL panningStarted;
+
 -(void)showSlideMenu;
 -(void)dismissSlideMenu;
 -(void)startPanning;
 -(void)endPanning;
 -(void)changePanning:(CGPoint)location;
+-(UIImage*)screenshotForViewController:(UIViewController *)viewController;
+-(UIImage*)currentScreenshot;
+-(void)handlePanGesture:(UIPanGestureRecognizer *)gesture;
 
 @end

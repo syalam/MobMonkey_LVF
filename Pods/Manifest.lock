@@ -1,15 +1,21 @@
 PODS:
   - AFNetworking (1.2.0)
+  - CustomBadge (2.0)
+  - ECSlidingViewController (0.9.0)
   - TPKeyboardAvoiding (0.0.1)
   - UIAlertView-Blocks (0.0.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 1.2.0)
+  - CustomBadge (~> 2.0)
+  - ECSlidingViewController (~> 0.9.0)
   - TPKeyboardAvoiding (~> 0.0.1)
   - UIAlertView-Blocks (~> 0.0.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 3cbae45f61a9f995cdbd56bd571223910d7f4e44
+  CustomBadge: 07ca87331a9644bc355963ff47c9d1b1f2516acf
+  ECSlidingViewController: 46cb6a6cc72e359a19d2f232728be08685450d90
   TPKeyboardAvoiding: 7289409b17dc2193a3f324672283c542f17c1bb1
   UIAlertView-Blocks: 7689ad7dd941417e7a7da81507482bc6f4f15bcd
 

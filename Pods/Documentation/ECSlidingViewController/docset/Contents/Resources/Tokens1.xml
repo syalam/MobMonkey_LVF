@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ECSlidingViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ECSlidingViewController</TokenIdentifier>
+			<Abstract type="html">ECSlidingViewController is a view controller container that presents its child view controllers in two layers. The top layer can be panned to reveal the layers below it.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/setUnderLeftViewController:</TokenIdentifier>
+			<Abstract type="html">Returns the view controller that will be visible when the top view is slide to the right.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIViewController *underLeftViewController</Declaration>
+			
+			
+			<Anchor>//api/name/underLeftViewController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/underLeftViewController</TokenIdentifier>
+			<Abstract type="html">Returns the view controller that will be visible when the top view is slide to the right.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIViewController *underLeftViewController</Declaration>
+			
+			
+			<Anchor>//api/name/underLeftViewController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/underLeftViewController</TokenIdentifier>
+			<Abstract type="html">Returns the view controller that will be visible when the top view is slide to the right.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIViewController *underLeftViewController</Declaration>
+			
+			
+			<Anchor>//api/name/underLeftViewController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/setUnderRightViewController:</TokenIdentifier>
+			<Abstract type="html">Returns the view controller that will be visible when the top view is slide to the left.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIViewController *underRightViewController</Declaration>
+			
+			
+			<Anchor>//api/name/underRightViewController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/underRightViewController</TokenIdentifier>
+			<Abstract type="html">Returns the view controller that will be visible when the top view is slide to the left.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIViewController *underRightViewController</Declaration>
+			
+			
+			<Anchor>//api/name/underRightViewController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/underRightViewController</TokenIdentifier>
+			<Abstract type="html">Returns the view controller that will be visible when the top view is slide to the left.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIViewController *underRightViewController</Declaration>
+			
+			
+			<Anchor>//api/name/underRightViewController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/setTopViewController:</TokenIdentifier>
+			<Abstract type="html">Returns the top view controller.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIViewController *topViewController</Declaration>
+			
+			
+			<Anchor>//api/name/topViewController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/topViewController</TokenIdentifier>
+			<Abstract type="html">Returns the top view controller.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIViewController *topViewController</Declaration>
+			
+			
+			<Anchor>//api/name/topViewController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/topViewController</TokenIdentifier>
+			<Abstract type="html">Returns the top view controller.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, strong) UIViewController *topViewController</Declaration>
+			
+			
+			<Anchor>//api/name/topViewController</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/setAnchorLeftPeekAmount:</TokenIdentifier>
+			<Abstract type="html">Returns the number of points the top view is visible when the top view is anchored to the left side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorLeftRevealAmount</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, unsafe_unretained) CGFloat anchorLeftPeekAmount</Declaration>
+			
+			
+			<Anchor>//api/name/anchorLeftPeekAmount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/anchorLeftPeekAmount</TokenIdentifier>
+			<Abstract type="html">Returns the number of points the top view is visible when the top view is anchored to the left side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorLeftRevealAmount</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, unsafe_unretained) CGFloat anchorLeftPeekAmount</Declaration>
+			
+			
+			<Anchor>//api/name/anchorLeftPeekAmount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorLeftPeekAmount</TokenIdentifier>
+			<Abstract type="html">Returns the number of points the top view is visible when the top view is anchored to the left side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorLeftRevealAmount</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, unsafe_unretained) CGFloat anchorLeftPeekAmount</Declaration>
+			
+			
+			<Anchor>//api/name/anchorLeftPeekAmount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/setAnchorRightPeekAmount:</TokenIdentifier>
+			<Abstract type="html">Returns the number of points the top view is visible when the top view is anchored to the right side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorRightRevealAmount</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, unsafe_unretained) CGFloat anchorRightPeekAmount</Declaration>
+			
+			
+			<Anchor>//api/name/anchorRightPeekAmount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/anchorRightPeekAmount</TokenIdentifier>
+			<Abstract type="html">Returns the number of points the top view is visible when the top view is anchored to the right side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorRightRevealAmount</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, unsafe_unretained) CGFloat anchorRightPeekAmount</Declaration>
+			
+			
+			<Anchor>//api/name/anchorRightPeekAmount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorRightPeekAmount</TokenIdentifier>
+			<Abstract type="html">Returns the number of points the top view is visible when the top view is anchored to the right side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorRightRevealAmount</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, unsafe_unretained) CGFloat anchorRightPeekAmount</Declaration>
+			
+			
+			<Anchor>//api/name/anchorRightPeekAmount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/setAnchorLeftRevealAmount:</TokenIdentifier>
+			<Abstract type="html">Returns the number of points the under right view is visible when the top view is anchored to the left side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorLeftPeekAmount</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, unsafe_unretained) CGFloat anchorLeftRevealAmount</Declaration>
+			
+			
+			<Anchor>//api/name/anchorLeftRevealAmount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/anchorLeftRevealAmount</TokenIdentifier>
+			<Abstract type="html">Returns the number of points the under right view is visible when the top view is anchored to the left side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorLeftPeekAmount</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, unsafe_unretained) CGFloat anchorLeftRevealAmount</Declaration>
+			
+			
+			<Anchor>//api/name/anchorLeftRevealAmount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorLeftRevealAmount</TokenIdentifier>
+			<Abstract type="html">Returns the number of points the under right view is visible when the top view is anchored to the left side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorLeftPeekAmount</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, unsafe_unretained) CGFloat anchorLeftRevealAmount</Declaration>
+			
+			
+			<Anchor>//api/name/anchorLeftRevealAmount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/setAnchorRightRevealAmount:</TokenIdentifier>
+			<Abstract type="html">Returns the number of points the under left view is visible when the top view is anchored to the right side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorRightPeekAmount</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, unsafe_unretained) CGFloat anchorRightRevealAmount</Declaration>
+			
+			
+			<Anchor>//api/name/anchorRightRevealAmount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/anchorRightRevealAmount</TokenIdentifier>
+			<Abstract type="html">Returns the number of points the under left view is visible when the top view is anchored to the right side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorRightPeekAmount</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, unsafe_unretained) CGFloat anchorRightRevealAmount</Declaration>
+			
+			
+			<Anchor>//api/name/anchorRightRevealAmount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorRightRevealAmount</TokenIdentifier>
+			<Abstract type="html">Returns the number of points the under left view is visible when the top view is anchored to the right side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/anchorRightPeekAmount</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property (nonatomic, unsafe_unretained) CGFloat anchorRightRevealAmount</Declaration>
+			
+			
+			<Anchor>//api/name/anchorRightRevealAmount</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/setShouldAllowUserInteractionsWhenAnchored:</TokenIdentifier>
+			<Abstract type="html">Specifies if the user should be able to interact with the top view when it is anchored.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) BOOL shouldAllowUserInteractionsWhenAnchored</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAllowUserInteractionsWhenAnchored</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/shouldAllowUserInteractionsWhenAnchored</TokenIdentifier>
+			<Abstract type="html">Specifies if the user should be able to interact with the top view when it is anchored.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) BOOL shouldAllowUserInteractionsWhenAnchored</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAllowUserInteractionsWhenAnchored</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/shouldAllowUserInteractionsWhenAnchored</TokenIdentifier>
+			<Abstract type="html">Specifies if the user should be able to interact with the top view when it is anchored.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) BOOL shouldAllowUserInteractionsWhenAnchored</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAllowUserInteractionsWhenAnchored</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/setUnderLeftWidthLayout:</TokenIdentifier>
+			<Abstract type="html">Specifies the behavior for the under left width</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) ECViewWidthLayout underLeftWidthLayout</Declaration>
+			
+			
+			<Anchor>//api/name/underLeftWidthLayout</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/underLeftWidthLayout</TokenIdentifier>
+			<Abstract type="html">Specifies the behavior for the under left width</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) ECViewWidthLayout underLeftWidthLayout</Declaration>
+			
+			
+			<Anchor>//api/name/underLeftWidthLayout</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/underLeftWidthLayout</TokenIdentifier>
+			<Abstract type="html">Specifies the behavior for the under left width</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) ECViewWidthLayout underLeftWidthLayout</Declaration>
+			
+			
+			<Anchor>//api/name/underLeftWidthLayout</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/setUnderRightWidthLayout:</TokenIdentifier>
+			<Abstract type="html">Specifies the behavior for the under right width</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) ECViewWidthLayout underRightWidthLayout</Declaration>
+			
+			
+			<Anchor>//api/name/underRightWidthLayout</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/underRightWidthLayout</TokenIdentifier>
+			<Abstract type="html">Specifies the behavior for the under right width</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) ECViewWidthLayout underRightWidthLayout</Declaration>
+			
+			
+			<Anchor>//api/name/underRightWidthLayout</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/underRightWidthLayout</TokenIdentifier>
+			<Abstract type="html">Specifies the behavior for the under right width</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) ECViewWidthLayout underRightWidthLayout</Declaration>
+			
+			
+			<Anchor>//api/name/underRightWidthLayout</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/setResetStrategy:</TokenIdentifier>
+			<Abstract type="html">Returns the strategy for resetting the top view when it is anchored.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) ECResetStrategy resetStrategy</Declaration>
+			
+			
+			<Anchor>//api/name/resetStrategy</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/resetStrategy</TokenIdentifier>
+			<Abstract type="html">Returns the strategy for resetting the top view when it is anchored.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) ECResetStrategy resetStrategy</Declaration>
+			
+			
+			<Anchor>//api/name/resetStrategy</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ECSlidingViewController/resetStrategy</TokenIdentifier>
+			<Abstract type="html">Returns the strategy for resetting the top view when it is anchored.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, unsafe_unretained) ECResetStrategy resetStrategy</Declaration>
+			
+			
+			<Anchor>//api/name/resetStrategy</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/panGesture</TokenIdentifier>
+			<Abstract type="html">Returns a horizontal panning gesture for moving the top view.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>- (UIPanGestureRecognizer *)panGesture</Declaration>
+			
+			
+			<Anchor>//api/name/panGesture</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/anchorTopViewTo:</TokenIdentifier>
+			<Abstract type="html">Slides the top view in the direction of the specified side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)anchorTopViewTo:(ECSide)side</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>side</Name>
+					<Abstract type="html">The side for the top view to slide towards.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/anchorTopViewTo:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/anchorTopViewTo:animations:onComplete:</TokenIdentifier>
+			<Abstract type="html">Slides the top view in the direction of the specified side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)anchorTopViewTo:(ECSide)side animations:(void ( ^ ) ( ))animations onComplete:(void ( ^ ) ( ))complete</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>side</Name>
+					<Abstract type="html">The side for the top view to slide towards.</Abstract>
+				</Parameter><Parameter>
+					<Name>animations</Name>
+					<Abstract type="html">Perform changes to properties that will be animated while top view is moved off screen. Can be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>onComplete</Name>
+					<Abstract type="html">Executed after the animation is completed. Can be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/anchorTopViewTo:animations:onComplete:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/anchorTopViewOffScreenTo:</TokenIdentifier>
+			<Abstract type="html">Slides the top view off of the screen in the direction of the specified side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)anchorTopViewOffScreenTo:(ECSide)side</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>side</Name>
+					<Abstract type="html">The side for the top view to slide off the screen towards.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/anchorTopViewOffScreenTo:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/anchorTopViewOffScreenTo:animations:onComplete:</TokenIdentifier>
+			<Abstract type="html">Slides the top view off of the screen in the direction of the specified side.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)anchorTopViewOffScreenTo:(ECSide)side animations:(void ( ^ ) ( ))animations onComplete:(void ( ^ ) ( ))complete</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>side</Name>
+					<Abstract type="html">The side for the top view to slide off the screen towards.</Abstract>
+				</Parameter><Parameter>
+					<Name>animations</Name>
+					<Abstract type="html">Perform changes to properties that will be animated while top view is moved off screen. Can be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>onComplete</Name>
+					<Abstract type="html">Executed after the animation is completed. Can be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/anchorTopViewOffScreenTo:animations:onComplete:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/resetTopView</TokenIdentifier>
+			<Abstract type="html">Slides the top view back to the center.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)resetTopView</Declaration>
+			
+			
+			<Anchor>//api/name/resetTopView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/resetTopViewWithAnimations:onComplete:</TokenIdentifier>
+			<Abstract type="html">Slides the top view back to the center.</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>- (void)resetTopViewWithAnimations:(void ( ^ ) ( ))animations onComplete:(void ( ^ ) ( ))complete</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>animations</Name>
+					<Abstract type="html">Perform changes to properties that will be animated while top view is moved back to the center of the screen. Can be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>onComplete</Name>
+					<Abstract type="html">Executed after the animation is completed. Can be nil.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/resetTopViewWithAnimations:onComplete:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/underLeftShowing</TokenIdentifier>
+			<Abstract type="html">Returns true if the underLeft view is showing (even partially)</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)underLeftShowing</Declaration>
+			
+			
+			<Anchor>//api/name/underLeftShowing</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/underRightShowing</TokenIdentifier>
+			<Abstract type="html">Returns true if the underRight view is showing (even partially)</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)underRightShowing</Declaration>
+			
+			
+			<Anchor>//api/name/underRightShowing</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ECSlidingViewController/topViewIsOffScreen</TokenIdentifier>
+			<Abstract type="html">Returns true if the top view is completely off the screen</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)topViewIsOffScreen</Declaration>
+			
+			
+			<Anchor>//api/name/topViewIsOffScreen</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+	</File>
+</Tokens>

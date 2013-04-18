@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cocoapods.ecslidingviewcontroller.ECSlidingViewController-0.9.0</string>
+	<key>CFBundleName</key>
+	<string>ECSlidingViewController 0.9.0 Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	
+	
+	<key>DocSetDescription</key>
+	<string>View controller container that presents its child view controllers in two sliding layers. Inspired by the Path 2.0 and Facebook iPhone apps.</string>
+	
+	<key>DocSetFeedName</key>
+	<string>ECSlidingViewController 0.9.0 Documentation</string>
+	
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DashDocSetFamily</key>
+	<string>appledoc</string>
+	<key>DocSetPublisherIdentifier</key>
+	<string>org.cocoapods.ecslidingviewcontroller.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>Mike Enriquez</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Mike Enriquez</string>
+</dict>
+</plist>

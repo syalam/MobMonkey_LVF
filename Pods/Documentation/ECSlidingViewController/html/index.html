@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>ECSlidingViewController 0.9.0 Reference</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="index.html">ECSlidingViewController 0.9.0 </a></h1>
+				<a id="developerHome" href="index.html">Mike Enriquez</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ECSlidingViewController 0.9.0 Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<article>
+			<div id="overview_contents" role="main">
+				<div class="main-navigation navigation-top">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ECSlidingViewController 0.9.0 Reference</h1>
+					</div>		
+				</div>
+				<div id="container">
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h1><a href="Classes/ECSlidingViewController.html">ECSlidingViewController</a></h1>
+
+<p><a href="Classes/ECSlidingViewController.html"><code>ECSlidingViewController</code></a> is a view controller container for iOS that presents its child view controllers in two layers. It provides functionality for sliding the top view to reveal the views underneath it. This functionality is inspired by the Path 2.0 and Facebook iPhone apps.</p>
+
+<iframe src="[http://player.vimeo.com/video/35959384?title=0&amp](http://player.vimeo.com/video/35959384?title=0&amp);byline=0&amp;portrait=0" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+<p><a href="[http://vimeo.com/35959384](http://vimeo.com/35959384)">ECSlidingViewController Demo</a> from <a href="[http://vimeo.com/user5026288](http://vimeo.com/user5026288)">EdgeCase</a> on <a href="[http://vimeo.com](http://vimeo.com)">Vimeo</a>.</p>
+
+
+<p></p>
+
+<p>This project is an example app that showcases the uses for <a href="Classes/ECSlidingViewController.html"><code>ECSlidingViewController</code></a>. This app uses storyboards, but it is not required.</p>
+
+<h2>Features</h2>
+
+<ul>
+<li>Panning gesture to move top view can be set on any <code>UIView</code>. It is most likely a navigation bar or the whole top view itself.</li>
+<li>Configurable anchor positions, with automatic adjustments for orientation change. See &ldquo;Anchor Position Geometry&rdquo; section below.</li>
+<li>There are no assumptions about the size and layout of the views under the top view. See the <code>underLeftWidthLayout</code> and <code>underRightWidthLayout</code> properties if you need a common layout.</li>
+<li>The child views can be changed at anytime.</li>
+<li>Child view controllers can be an instance of <code>UIViewController</code> or any subclass of <code>UIViewController</code> including <code>UINavigationController</code> and <code>UITabBarController</code>.</li>
+<li>iPad support.</li>
+<li>See <a href="https://github.com/edgecase/ECSlidingViewController/blob/master/ECSlidingViewController/Vendor/ECSlidingViewController/ECSlidingViewController.h">ECSlidingViewController/Vendor/ECSlidingViewController/ECSlidingViewController.h</a> for options and configuration.</li>
+</ul>
+
+
+<h2>Requirements</h2>
+
+<ul>
+<li>iOS 5</li>
+<li>ARC</li>
+</ul>
+
+
+<h2>Getting Started</h2>
+
+<p>This section will walk through of a simplified version of the included example app. You&rsquo;ll see how to setup the top view that can be panned to the right side to reveal the under left view.</p>
+
+<h3>Copy <a href="Classes/ECSlidingViewController.html">ECSlidingViewController</a> into your project</h3>
+
+<p>You&rsquo;ll need these four files:</p>
+
+<ul>
+<li>ECSlidingViewController/Vendor/ECSlidingViewController/<a href="Classes/ECSlidingViewController.html">ECSlidingViewController</a>.h</li>
+<li>ECSlidingViewController/Vendor/ECSlidingViewController/<a href="Classes/ECSlidingViewController.html">ECSlidingViewController</a>.m</li>
+<li>ECSlidingViewController/Vendor/ECSlidingViewController/UIImage+ImageWithUIView.h</li>
+<li>ECSlidingViewController/Vendor/ECSlidingViewController/UIImage+ImageWithUIView.m</li>
+</ul>
+
+
+<h3>Setup storyboards and set the topViewController</h3>
+
+<p>Add a UIViewController to your storyboards and set the subclass to <code>ECSlidingViewController</code>.  Then, you&rsquo;ll need to configure the instance of this view controller by setting a <code>topViewController</code></p>
+
+<pre><code>  ECSlidingViewController *slidingViewController = (ECSlidingViewController *)self.window.rootViewController;  
+
+  slidingViewController.topViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FirstTop"];  
+</code></pre>
+
+<p>In this example, we can get a reference to the <code>ECSlidingViewController</code> instance then, we set the <code>topViewController</code> with an instance of a <code>UIViewController</code> subclass called <code>FirstTopViewController</code> that is identified as &ldquo;FirstTop&rdquo;.</p>
+
+<h3>Configure the topViewController</h3>
+
+<p>The top view controller is responsible for two things:</p>
+
+<ul>
+<li>Setting the view controllers underneath it.</li>
+<li>Adding the <code>panGesture</code> to a <code>UIView</code>.</li>
+</ul>
+
+
+<p>To do these, you must first add an <code>#import "ECSlidingViewController.h"</code> to the <code>FirstTopViewController</code> header. Then in the implementation you&rsquo;ll have access to a category on <code>UIViewController</code> called <code>slidingViewController</code>.  This the top-level instance of the <code>ECSlidingViewController</code> container.  With this instance, you can set the view controllers underneath the top view and add panning.</p>
+
+<p>Below is the <code>viewWillAppear:</code> method for <code>FirstTopViewController</code>.</p>
+
+<pre><code>- (void)viewWillAppear:(BOOL)animated  
+{  
+  [super viewWillAppear:animated];  
+
+  if (![self.slidingViewController.underLeftViewController isKindOfClass:[MenuViewController class]]) {  
+    self.slidingViewController.underLeftViewController  = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];  
+  }  
+
+  [self.view addGestureRecognizer:self.slidingViewController.panGesture];  
+  [self.slidingViewController setAnchorRightRevealAmount:280.0f];  
+}  
+</code></pre>
+
+<p>The above code will conditionally set the <code>underLeftViewController</code> if it is not already there. Then, it adds the gesture recognizer to the top view. The last line of code specifies the top view&rsquo;s anchor position on the right side.</p>
+
+<h2>Anchor Position Geometry</h2>
+
+<p>There are four properties related to anchor positions. They are a combination of left, right, reveal amount, and peek amount. The diagrams below demonstrate the difference between peek and reveal.</p>
+
+<ul>
+<li>anchorLeftPeekAmount</li>
+<li>anchorRightPeekAmount</li>
+<li>anchorLeftRevealAmount</li>
+<li>anchorRightRevealAmount</li>
+</ul>
+
+
+<p>Below is an example of the anchorRightPeekAmount set:</p>
+
+<p>!<a href="http://dl.dropbox.com/u/10937237/peek.png">anchorRightPeekAmount example</a></p>
+
+<p>Below is an example of the anchorRightRevealAmount set:</p>
+
+<p>!<a href="http://dl.dropbox.com/u/10937237/reveal.png">anchorRightRevealAmount example</a></p>
+
+<h2>Top View Shadow</h2>
+
+<p><a href="Classes/ECSlidingViewController.html"><code>ECSlidingViewController</code></a> handles the shadowOffset, shadowPath, and their rotations for you automatically.  The following code in your top view controller will add a shadow:</p>
+
+<pre><code>- (void)viewWillAppear:(BOOL)animated  
+{  
+  [super viewWillAppear:animated];  
+
+  self.view.layer.shadowOpacity = 0.75f;  
+  self.view.layer.shadowRadius = 10.0f;  
+  self.view.layer.shadowColor = [UIColor blackColor].CGColor;  
+}  
+</code></pre>
+
+<h2>MIT License</h2>
+
+<p>Copyright &copy; 2012 EdgeCase</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of<br/>
+this software and associated documentation files (the &ldquo;Software&rdquo;), to deal in<br/>
+the Software without restriction, including without limitation the rights to<br/>
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies<br/>
+of the Software, and to permit persons to whom the Software is furnished to do<br/>
+so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all<br/>
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED &ldquo;AS IS&rdquo;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR<br/>
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,<br/>
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE<br/>
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<br/>
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,<br/>
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE<br/>
+SOFTWARE.</p>
+						
+						
+					</div>
+					
+                        
+                    
+					
+					
+					<div class="index-column">
+						<h2 class="index-title">Class References</h2>
+						<ul>
+							
+							<li><a href="Classes/ECSlidingViewController.html">ECSlidingViewController</a></li>
+							
+						</ul>
+					</div>
+					
+					
+						
+					<div class="index-column">
+						
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/UIImage+ImageWithUIView.html">UIImage(ImageWithUIView)</a></li>
+							
+							<li><a href="Categories/UIViewController+SlidingViewExtension.html">UIViewController(SlidingViewExtension)</a></li>
+							
+						</ul>
+						
+					</div>
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<a href="hierarchy.html">Next</a>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Mike Enriquez. All rights reserved. (Last updated: 2013-04-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+	
+					</div>
+				</div>
+			</div>
+		</article>		
+	</body>
+</html>

@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/mkral/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.ecslidingviewcontroller.ECSlidingViewController-0.9.0.docset
+Time: 2013-04-18 21:17:08 +0000

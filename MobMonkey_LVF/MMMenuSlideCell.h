@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MMMenuSlideCell : UITableViewCell
+@interface MMMenuSlideCell : UITableViewCell {
+    UIImageView *imageView;
+    UILabel *label;
+    
+}
 
 @end

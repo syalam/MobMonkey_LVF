@@ -1,0 +1,1503 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ECSlidingViewController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ECSlidingViewController 0.9.0 </a></h1>
+				<a id="developerHome" href="../index.html">Mike Enriquez</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ECSlidingViewController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/anchorLeftPeekAmount">&nbsp;&nbsp;&nbsp;&nbsp;anchorLeftPeekAmount</option>
+	
+	<option value="//api/name/anchorLeftRevealAmount">&nbsp;&nbsp;&nbsp;&nbsp;anchorLeftRevealAmount</option>
+	
+	<option value="//api/name/anchorRightPeekAmount">&nbsp;&nbsp;&nbsp;&nbsp;anchorRightPeekAmount</option>
+	
+	<option value="//api/name/anchorRightRevealAmount">&nbsp;&nbsp;&nbsp;&nbsp;anchorRightRevealAmount</option>
+	
+	<option value="//api/name/resetStrategy">&nbsp;&nbsp;&nbsp;&nbsp;resetStrategy</option>
+	
+	<option value="//api/name/shouldAllowUserInteractionsWhenAnchored">&nbsp;&nbsp;&nbsp;&nbsp;shouldAllowUserInteractionsWhenAnchored</option>
+	
+	<option value="//api/name/topViewController">&nbsp;&nbsp;&nbsp;&nbsp;topViewController</option>
+	
+	<option value="//api/name/underLeftViewController">&nbsp;&nbsp;&nbsp;&nbsp;underLeftViewController</option>
+	
+	<option value="//api/name/underLeftWidthLayout">&nbsp;&nbsp;&nbsp;&nbsp;underLeftWidthLayout</option>
+	
+	<option value="//api/name/underRightViewController">&nbsp;&nbsp;&nbsp;&nbsp;underRightViewController</option>
+	
+	<option value="//api/name/underRightWidthLayout">&nbsp;&nbsp;&nbsp;&nbsp;underRightWidthLayout</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/anchorTopViewOffScreenTo:">&nbsp;&nbsp;&nbsp;&nbsp;- anchorTopViewOffScreenTo:</option>
+	
+	<option value="//api/name/anchorTopViewOffScreenTo:animations:onComplete:">&nbsp;&nbsp;&nbsp;&nbsp;- anchorTopViewOffScreenTo:animations:onComplete:</option>
+	
+	<option value="//api/name/anchorTopViewTo:">&nbsp;&nbsp;&nbsp;&nbsp;- anchorTopViewTo:</option>
+	
+	<option value="//api/name/anchorTopViewTo:animations:onComplete:">&nbsp;&nbsp;&nbsp;&nbsp;- anchorTopViewTo:animations:onComplete:</option>
+	
+	<option value="//api/name/panGesture">&nbsp;&nbsp;&nbsp;&nbsp;- panGesture</option>
+	
+	<option value="//api/name/resetTopView">&nbsp;&nbsp;&nbsp;&nbsp;- resetTopView</option>
+	
+	<option value="//api/name/resetTopViewWithAnimations:onComplete:">&nbsp;&nbsp;&nbsp;&nbsp;- resetTopViewWithAnimations:onComplete:</option>
+	
+	<option value="//api/name/topViewIsOffScreen">&nbsp;&nbsp;&nbsp;&nbsp;- topViewIsOffScreen</option>
+	
+	<option value="//api/name/underLeftShowing">&nbsp;&nbsp;&nbsp;&nbsp;- underLeftShowing</option>
+	
+	<option value="//api/name/underRightShowing">&nbsp;&nbsp;&nbsp;&nbsp;- underRightShowing</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/anchorLeftPeekAmount">anchorLeftPeekAmount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/anchorLeftRevealAmount">anchorLeftRevealAmount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/anchorRightPeekAmount">anchorRightPeekAmount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/anchorRightRevealAmount">anchorRightRevealAmount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetStrategy">resetStrategy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAllowUserInteractionsWhenAnchored">shouldAllowUserInteractionsWhenAnchored</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/topViewController">topViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/underLeftViewController">underLeftViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/underLeftWidthLayout">underLeftWidthLayout</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/underRightViewController">underRightViewController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/underRightWidthLayout">underRightWidthLayout</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/anchorTopViewOffScreenTo:">anchorTopViewOffScreenTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/anchorTopViewOffScreenTo:animations:onComplete:">anchorTopViewOffScreenTo:animations:onComplete:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/anchorTopViewTo:">anchorTopViewTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/anchorTopViewTo:animations:onComplete:">anchorTopViewTo:animations:onComplete:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/panGesture">panGesture</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetTopView">resetTopView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetTopViewWithAnimations:onComplete:">resetTopViewWithAnimations:onComplete:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/topViewIsOffScreen">topViewIsOffScreen</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/underLeftShowing">underLeftShowing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/underRightShowing">underRightShowing</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ECSlidingViewController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ECSlidingViewController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIViewController</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ECSlidingViewController.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ECSlidingViewController is a view controller container that presents its child view controllers in two layers. The top layer can be panned to reveal the layers below it.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/underLeftViewController">&nbsp;&nbsp;underLeftViewController</a></code>
+		<span class="tooltip"><p>Returns the view controller that will be visible when the top view is slide to the right.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/underRightViewController">&nbsp;&nbsp;underRightViewController</a></code>
+		<span class="tooltip"><p>Returns the view controller that will be visible when the top view is slide to the left.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/topViewController">&nbsp;&nbsp;topViewController</a></code>
+		<span class="tooltip"><p>Returns the top view controller.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/anchorLeftPeekAmount">&nbsp;&nbsp;anchorLeftPeekAmount</a></code>
+		<span class="tooltip"><p>Returns the number of points the top view is visible when the top view is anchored to the left side.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/anchorRightPeekAmount">&nbsp;&nbsp;anchorRightPeekAmount</a></code>
+		<span class="tooltip"><p>Returns the number of points the top view is visible when the top view is anchored to the right side.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/anchorLeftRevealAmount">&nbsp;&nbsp;anchorLeftRevealAmount</a></code>
+		<span class="tooltip"><p>Returns the number of points the under right view is visible when the top view is anchored to the left side.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/anchorRightRevealAmount">&nbsp;&nbsp;anchorRightRevealAmount</a></code>
+		<span class="tooltip"><p>Returns the number of points the under left view is visible when the top view is anchored to the right side.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldAllowUserInteractionsWhenAnchored">&nbsp;&nbsp;shouldAllowUserInteractionsWhenAnchored</a></code>
+		<span class="tooltip"><p>Specifies if the user should be able to interact with the top view when it is anchored.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/underLeftWidthLayout">&nbsp;&nbsp;underLeftWidthLayout</a></code>
+		<span class="tooltip"><p>Specifies the behavior for the under left width</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/underRightWidthLayout">&nbsp;&nbsp;underRightWidthLayout</a></code>
+		<span class="tooltip"><p>Specifies the behavior for the under right width</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetStrategy">&nbsp;&nbsp;resetStrategy</a></code>
+		<span class="tooltip"><p>Returns the strategy for resetting the top view when it is anchored.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/panGesture">&ndash;&nbsp;panGesture</a></code>
+		<span class="tooltip"><p>Returns a horizontal panning gesture for moving the top view.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/anchorTopViewTo:">&ndash;&nbsp;anchorTopViewTo:</a></code>
+		<span class="tooltip"><p>Slides the top view in the direction of the specified side.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/anchorTopViewTo:animations:onComplete:">&ndash;&nbsp;anchorTopViewTo:animations:onComplete:</a></code>
+		<span class="tooltip"><p>Slides the top view in the direction of the specified side.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/anchorTopViewOffScreenTo:">&ndash;&nbsp;anchorTopViewOffScreenTo:</a></code>
+		<span class="tooltip"><p>Slides the top view off of the screen in the direction of the specified side.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/anchorTopViewOffScreenTo:animations:onComplete:">&ndash;&nbsp;anchorTopViewOffScreenTo:animations:onComplete:</a></code>
+		<span class="tooltip"><p>Slides the top view off of the screen in the direction of the specified side.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetTopView">&ndash;&nbsp;resetTopView</a></code>
+		<span class="tooltip"><p>Slides the top view back to the center.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetTopViewWithAnimations:onComplete:">&ndash;&nbsp;resetTopViewWithAnimations:onComplete:</a></code>
+		<span class="tooltip"><p>Slides the top view back to the center.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/underLeftShowing">&ndash;&nbsp;underLeftShowing</a></code>
+		<span class="tooltip"><p>Returns true if the underLeft view is showing (even partially)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/underRightShowing">&ndash;&nbsp;underRightShowing</a></code>
+		<span class="tooltip"><p>Returns true if the underRight view is showing (even partially)</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/topViewIsOffScreen">&ndash;&nbsp;topViewIsOffScreen</a></code>
+		<span class="tooltip"><p>Returns true if the top view is completely off the screen</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/anchorLeftPeekAmount" title="anchorLeftPeekAmount"></a>
+	<h3 class="subsubtitle method-title">anchorLeftPeekAmount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the number of points the top view is visible when the top view is anchored to the left side.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, unsafe_unretained) CGFloat anchorLeftPeekAmount</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the number of points the top view is visible when the top view is anchored to the left side.</p>
+
+<p>This value is fixed after rotation. If the number of points to reveal needs to be fixed, use <a href="#//api/name/anchorLeftRevealAmount">anchorLeftRevealAmount</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/anchorLeftRevealAmount">@property anchorLeftRevealAmount</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/anchorLeftRevealAmount" title="anchorLeftRevealAmount"></a>
+	<h3 class="subsubtitle method-title">anchorLeftRevealAmount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the number of points the under right view is visible when the top view is anchored to the left side.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, unsafe_unretained) CGFloat anchorLeftRevealAmount</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the number of points the under right view is visible when the top view is anchored to the left side.</p>
+
+<p>This value is fixed after rotation. If the number of points to peek needs to be fixed, use <a href="#//api/name/anchorLeftPeekAmount">anchorLeftPeekAmount</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/anchorLeftPeekAmount">@property anchorLeftPeekAmount</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/anchorRightPeekAmount" title="anchorRightPeekAmount"></a>
+	<h3 class="subsubtitle method-title">anchorRightPeekAmount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the number of points the top view is visible when the top view is anchored to the right side.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, unsafe_unretained) CGFloat anchorRightPeekAmount</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the number of points the top view is visible when the top view is anchored to the right side.</p>
+
+<p>This value is fixed after rotation. If the number of points to reveal needs to be fixed, use <a href="#//api/name/anchorRightRevealAmount">anchorRightRevealAmount</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/anchorRightRevealAmount">@property anchorRightRevealAmount</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/anchorRightRevealAmount" title="anchorRightRevealAmount"></a>
+	<h3 class="subsubtitle method-title">anchorRightRevealAmount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the number of points the under left view is visible when the top view is anchored to the right side.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, unsafe_unretained) CGFloat anchorRightRevealAmount</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the number of points the under left view is visible when the top view is anchored to the right side.</p>
+
+<p>This value is fixed after rotation. If the number of points to peek needs to be fixed, use <a href="#//api/name/anchorRightPeekAmount">anchorRightPeekAmount</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/anchorRightPeekAmount">@property anchorRightPeekAmount</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetStrategy" title="resetStrategy"></a>
+	<h3 class="subsubtitle method-title">resetStrategy</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the strategy for resetting the top view when it is anchored.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, unsafe_unretained) ECResetStrategy resetStrategy</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the strategy for resetting the top view when it is anchored.</p>
+
+<p>By default, this is set to ECPanning | ECTapping to allow both panning and tapping to reset the top view.</p>
+
+<p>If this is set to ECNone, then there must be a custom way to reset the top view otherwise it will stay anchored.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldAllowUserInteractionsWhenAnchored" title="shouldAllowUserInteractionsWhenAnchored"></a>
+	<h3 class="subsubtitle method-title">shouldAllowUserInteractionsWhenAnchored</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies if the user should be able to interact with the top view when it is anchored.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, unsafe_unretained) BOOL shouldAllowUserInteractionsWhenAnchored</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specifies if the user should be able to interact with the top view when it is anchored.</p>
+
+<p>By default, this is set to NO</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/topViewController" title="topViewController"></a>
+	<h3 class="subsubtitle method-title">topViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the top view controller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIViewController *topViewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the top view controller.</p>
+
+<p>This is the main view controller that is presented above the other view controllers.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/underLeftViewController" title="underLeftViewController"></a>
+	<h3 class="subsubtitle method-title">underLeftViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the view controller that will be visible when the top view is slide to the right.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIViewController *underLeftViewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the view controller that will be visible when the top view is slide to the right.</p>
+
+<p>This view controller is typically a menu or top-level view that switches out the top view controller.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/underLeftWidthLayout" title="underLeftWidthLayout"></a>
+	<h3 class="subsubtitle method-title">underLeftWidthLayout</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies the behavior for the under left width</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, unsafe_unretained) ECViewWidthLayout underLeftWidthLayout</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specifies the behavior for the under left width</p>
+
+<p>By default, this is set to ECFullWidth</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/underRightViewController" title="underRightViewController"></a>
+	<h3 class="subsubtitle method-title">underRightViewController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the view controller that will be visible when the top view is slide to the left.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIViewController *underRightViewController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns the view controller that will be visible when the top view is slide to the left.</p>
+
+<p>This view controller is typically a supplemental view to the top view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/underRightWidthLayout" title="underRightWidthLayout"></a>
+	<h3 class="subsubtitle method-title">underRightWidthLayout</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies the behavior for the under right width</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, unsafe_unretained) ECViewWidthLayout underRightWidthLayout</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specifies the behavior for the under right width</p>
+
+<p>By default, this is set to ECFullWidth</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/anchorTopViewOffScreenTo:" title="anchorTopViewOffScreenTo:"></a>
+	<h3 class="subsubtitle method-title">anchorTopViewOffScreenTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Slides the top view off of the screen in the direction of the specified side.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)anchorTopViewOffScreenTo:(ECSide)<em>side</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>side</em></dt>
+			<dd><p>The side for the top view to slide off the screen towards.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Slides the top view off of the screen in the direction of the specified side.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/anchorTopViewOffScreenTo:animations:onComplete:" title="anchorTopViewOffScreenTo:animations:onComplete:"></a>
+	<h3 class="subsubtitle method-title">anchorTopViewOffScreenTo:animations:onComplete:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Slides the top view off of the screen in the direction of the specified side.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)anchorTopViewOffScreenTo:(ECSide)<em>side</em> animations:(void ( ^ ) ( ))<em>animations</em> onComplete:(void ( ^ ) ( ))<em>complete</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>side</em></dt>
+			<dd><p>The side for the top view to slide off the screen towards.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animations</em></dt>
+			<dd><p>Perform changes to properties that will be animated while top view is moved off screen. Can be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>onComplete</em></dt>
+			<dd><p>Executed after the animation is completed. Can be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Slides the top view off of the screen in the direction of the specified side.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/anchorTopViewTo:" title="anchorTopViewTo:"></a>
+	<h3 class="subsubtitle method-title">anchorTopViewTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Slides the top view in the direction of the specified side.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)anchorTopViewTo:(ECSide)<em>side</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>side</em></dt>
+			<dd><p>The side for the top view to slide towards.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Slides the top view in the direction of the specified side.</p>
+
+<p>A peek amount or reveal amount must be set for the given side. The top view will anchor to one of those specified values.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/anchorTopViewTo:animations:onComplete:" title="anchorTopViewTo:animations:onComplete:"></a>
+	<h3 class="subsubtitle method-title">anchorTopViewTo:animations:onComplete:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Slides the top view in the direction of the specified side.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)anchorTopViewTo:(ECSide)<em>side</em> animations:(void ( ^ ) ( ))<em>animations</em> onComplete:(void ( ^ ) ( ))<em>complete</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>side</em></dt>
+			<dd><p>The side for the top view to slide towards.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animations</em></dt>
+			<dd><p>Perform changes to properties that will be animated while top view is moved off screen. Can be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>onComplete</em></dt>
+			<dd><p>Executed after the animation is completed. Can be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Slides the top view in the direction of the specified side.</p>
+
+<p>A peek amount or reveal amount must be set for the given side. The top view will anchor to one of those specified values.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/panGesture" title="panGesture"></a>
+	<h3 class="subsubtitle method-title">panGesture</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a horizontal panning gesture for moving the top view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIPanGestureRecognizer *)panGesture</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a horizontal panning gesture for moving the top view.</p>
+
+<p>This is typically added to the top view or a top view&rsquo;s navigation bar.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetTopView" title="resetTopView"></a>
+	<h3 class="subsubtitle method-title">resetTopView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Slides the top view back to the center.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resetTopView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Slides the top view back to the center.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetTopViewWithAnimations:onComplete:" title="resetTopViewWithAnimations:onComplete:"></a>
+	<h3 class="subsubtitle method-title">resetTopViewWithAnimations:onComplete:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Slides the top view back to the center.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resetTopViewWithAnimations:(void ( ^ ) ( ))<em>animations</em> onComplete:(void ( ^ ) ( ))<em>complete</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animations</em></dt>
+			<dd><p>Perform changes to properties that will be animated while top view is moved back to the center of the screen. Can be nil.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>onComplete</em></dt>
+			<dd><p>Executed after the animation is completed. Can be nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Slides the top view back to the center.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/topViewIsOffScreen" title="topViewIsOffScreen"></a>
+	<h3 class="subsubtitle method-title">topViewIsOffScreen</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns true if the top view is completely off the screen</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)topViewIsOffScreen</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns true if the top view is completely off the screen</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/underLeftShowing" title="underLeftShowing"></a>
+	<h3 class="subsubtitle method-title">underLeftShowing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns true if the underLeft view is showing (even partially)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)underLeftShowing</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns true if the underLeft view is showing (even partially)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/underRightShowing" title="underRightShowing"></a>
+	<h3 class="subsubtitle method-title">underRightShowing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns true if the underRight view is showing (even partially)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)underRightShowing</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns true if the underRight view is showing (even partially)</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ECSlidingViewController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Mike Enriquez. All rights reserved. (Last updated: 2013-04-18)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

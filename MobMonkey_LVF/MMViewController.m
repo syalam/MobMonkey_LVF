@@ -7,7 +7,8 @@
 //
 
 #import "MMViewController.h"
-
+#import "ECSlidingViewController.h"
+#import "MMSlideMenuViewController.h"
 @interface MMViewController ()
 
 @end
@@ -18,8 +19,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
-
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

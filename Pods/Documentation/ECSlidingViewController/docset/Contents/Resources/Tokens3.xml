@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/UIViewController+SlidingViewExtension.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/UIViewController(SlidingViewExtension)</TokenIdentifier>
+			<Abstract type="html">UIViewController extension</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIViewController(SlidingViewExtension)/slidingViewController</TokenIdentifier>
+			<Abstract type="html">Convience method for getting access to the ECSlidingViewController instance</Abstract>
+			<DeclaredIn>ECSlidingViewController.h</DeclaredIn>			
+			
+			<Declaration>- (ECSlidingViewController *)slidingViewController</Declaration>
+			
+			
+			<Anchor>//api/name/slidingViewController</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+	</File>
+</Tokens>

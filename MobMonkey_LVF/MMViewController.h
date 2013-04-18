@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MMViewController : UIViewController
+#import "MMContentViewController.h"
+@interface MMViewController : MMContentViewController
 
 @end

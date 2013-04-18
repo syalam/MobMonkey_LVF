@@ -2,21 +2,20 @@
 //  MMNavigationViewController.m
 //  MobMonkey_LVF
 //
-//  Created by Michael Kral on 4/17/13.
+//  Created by Michael Kral on 4/18/13.
 //  Copyright (c) 2013 MobMonkey. All rights reserved.
 //
 
 #import "MMNavigationViewController.h"
-
-#import "MMAppDelegate.h"
+#import "ECSlidingViewController.h"
 
 @interface MMNavigationViewController ()
+
+@property (nonatomic, strong) UIBarButtonItem *leftMenuButton;
 
 @end
 
 @implementation MMNavigationViewController
-
-@synthesize panGesture;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,18 +25,15 @@
     }
     return self;
 }
--(id)initWithRootViewController:(UIViewController *)rootViewController {
-    self = [super initWithRootViewController:rootViewController];
-    self.navigationBar.tintColor = [UIColor colorWithRed:1.000 green:0.558 blue:0.286 alpha:1.000];
-    if(self){
+-(id)initWithRootViewController:(UIViewController *)rootViewController{
     
-        UIImageView *menuImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"whiteList.png"]];
-
-       // UIBarButtonItem *menuItem = [[UIBarButtonItem alloc] initWithCustomView:menuImageView];
+    if(self = [super initWithRootViewController:rootViewController]){
+        
+        self.navigationBar.tintColor = [UIColor colorWithRed:1.000 green:0.558 blue:0.286 alpha:1.000];
+        
         UIBarButtonItem *menuItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"whiteList.png"] style:UIBarButtonItemStyleBordered target:self action:@selector(menuButtonPressed:)];
         
         rootViewController.navigationItem.leftBarButtonItem = menuItem;
-        
     }
     
     return self;
@@ -47,17 +43,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-    
-    panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureMoveAround:)];
-    [self.view addGestureRecognizer:panGesture];
-    
+	// Do any additional setup after loading the view.
 }
--(void)viewDidUnload{
-    [super viewDidUnload];
-    
-    [self.view removeGestureRecognizer:panGesture];
-}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -65,20 +53,7 @@
 }
 
 -(void)menuButtonPressed:(id)sender{
-    [app_delegate showSlideMenu];
-}
--(void)panGestureMoveAround:(UIPanGestureRecognizer *)gesture {
-    
-    
-    if(gesture.state == UIGestureRecognizerStateBegan){
-        [app_delegate startPanning];
-    }else if(gesture.state == UIGestureRecognizerStateEnded) {
-        [app_delegate endPanning];
-    }else if(gesture.state == UIGestureRecognizerStateChanged) {
-        CGPoint location = [gesture locationInView:self.view];
-        [app_delegate changePanning:location];
-    }
-
+    [self.slidingViewController anchorTopViewTo:ECRight];
 }
 
 @end

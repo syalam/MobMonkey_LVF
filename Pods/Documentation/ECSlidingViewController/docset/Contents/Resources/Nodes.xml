@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>ECSlidingViewController 0.9.0</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>ECSlidingViewController</Name>
+			<Path>Classes/ECSlidingViewController.html</Path>
+		</Node>
+		
+		<Node id="2">
+			<Name>UIImage(ImageWithUIView)</Name>
+			<Path>Categories/UIImage+ImageWithUIView.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>UIViewController(SlidingViewExtension)</Name>
+			<Path>Categories/UIViewController+SlidingViewExtension.html</Path>
+		</Node>
+		
+		
+	</Library>
+</DocSetNodes>
